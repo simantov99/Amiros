@@ -1,0 +1,5 @@
+public static void SendAirCraftToLocation(PirateGame game , Aircraft Ac , Location L)
+        {
+            List<Location> _sailOptions = game.GetSailOptions(Ac,L);
+            game.SetSail(Ac,_sailOptions[0]);
+        }
